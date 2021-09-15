@@ -19,6 +19,7 @@ a {
     text-decoration: none;
     color: white;
     display: block;
+    letter-spacing: 0.125rem;
 }
 
 a:hover{
@@ -29,18 +30,18 @@ a:hover{
     color: red;
 }
 
+::placeholder {
+    color: snow;
+}
 /**********
 NAVBAR
 **********/
 
 .nav{
-    /* height: 100px; */
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 150px;
     align-items: center;
-    /* padding: 0 2rem; */
-    
 }
 
 .nav__header {
@@ -59,16 +60,20 @@ NAVBAR
     align-items: center;
 }
 
-.nav__link {
+li {
     height: 100%;
-    border: 1px solid white;
     align-items: center;
     display: grid;
 }
 
-.nav__link a {
+.active {
+    text-decoration: overline;
+    text-decoration-color: gold;
+}
+
+.nav__link {
     display: block;
-    font-size: 1rem;
+    font-size: 1.25rem;
     cursor: pointer;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -76,7 +81,7 @@ NAVBAR
 }
 
 #content{
-    height: calc(100vh - 150px);
+    height: calc(100vh - 150px - 4rem);
     max-width: 1400px;
     margin: auto;
 }
@@ -128,14 +133,13 @@ MENU
 .menu__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    /* border: 2px solid white; */
 }
 
 .menu__description {
     width: 100%;
     display: grid;
     place-items: center;
+    font-size: 1.3rem;
 }
 .menu__img {
     width: 100%;
@@ -152,15 +156,79 @@ MENU
 /**********
 CONTACT
 **********/
+
 .contact {
     height: calc(100vh - 150px);
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr 1fr;
-    
     gap: 1rem;
-    border: 1px solid yellow;
 }
 
-.contact__details {
-    border: 1px solid red;
+
+.contact__address,
+.contact__hours,
+.contact__phone {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.contact__details p {
+    padding: 0.5rem;
+}
+
+/**********
+FORM
+**********/
+.form {
+    display: grid;
+    place-items: center;
+    width: 500px;
+    
+}
+
+.form__name,
+.form__email,
+.form__message {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid snow;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: snow;
+}
+
+.form__message {
+    height: 200px;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: snow;
+    border: 1px solid white;
+    letter-spacing: .125rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: snow;
+    color: black;
+}
+
+/**********
+CONTACT
+**********/
+.footer {
+    display: grid;
+    place-items: center;
+    height: 4rem;
+    text-align: center;
+    background: black;
 }

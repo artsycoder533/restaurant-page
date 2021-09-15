@@ -17,7 +17,7 @@ function menu() {
     const fishImg = img(fish);
     const vegetarianImg = img(vegetarian);
     const menuItemImgs = [avocadoImg, carneasadaImg, chipsImg, fishImg, vegetarianImg];
-    const menuItemDescriptions = ["Avocado Dip  6.99", "Carne Asada Tacos $10.99", "3 Chip Sampler Platter  $7.99", "Fried Fish Tacos  $9.99", "Vegetarian Tacos $8.99"];
+    const menuItemDescriptions = ["Avocado Dip 6.99", "Carne Asada Tacos $10.99", "3 Chip Sampler Platter  $7.99", "Fried Fish Tacos  $9.99", "Vegetarian Tacos $8.99"];
     menuItemImgs.forEach(function (menuItem, index) {
 			menu.appendChild(
 				createMenuItem(
@@ -30,7 +30,6 @@ function menu() {
 			);
 		});
     return menu;
-    //alert("menu tab clicked");
 }
 
 function img(src) {
