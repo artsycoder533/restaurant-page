@@ -133,12 +133,6 @@ HERO
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 768px){
-    .hero {
-        /* min-height: 100vh; */
-    }
-}
-
 /**********
 MENU
 **********/
