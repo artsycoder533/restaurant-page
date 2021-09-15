@@ -196,9 +196,24 @@ MENU
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 769px){
     .menu {
         grid-template-columns: 1fr;
+        height: 100%;
+        margin-top: 2rem;
+    }
+    .menu__item {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu__description {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .menu {
+        grid-template-columns: 1fr 1fr;
         height: 100%;
         margin-top: 2rem;
     }
@@ -240,6 +255,7 @@ CONTACT
 @media screen and (max-width: 992px){
     .contact {
         grid-template-columns: 1fr;
+        height: auto;
     }
 
     .contact__details p {
