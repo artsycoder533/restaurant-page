@@ -181,7 +181,7 @@ MENU
     border-radius: 0.5rem;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     .menu {
         grid-template-columns: 1fr;
         height: 100%;
@@ -196,14 +196,21 @@ MENU
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (max-width: 1200px){
     .menu {
         grid-template-columns: 1fr;
+        height: 100%;
+        margin-top: 2rem;
     }
     .menu__item {
         grid-template-columns: 1fr 1fr;
     }
+
+    .menu__description {
+        padding: 1rem;
+    }
 }
+
 /**********
 CONTACT
 **********/
@@ -230,7 +237,7 @@ CONTACT
     padding: 0.5rem;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 992px){
     .contact {
         grid-template-columns: 1fr;
     }
