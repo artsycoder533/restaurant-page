@@ -6,7 +6,8 @@
 
 body {
     min-height: 100vh;
-    background: rgba(0,0,0,0.7) url(./images/taco.png);
+    width: 100%;
+    background: rgba(0,0,0,0.8) url(./images/taco.png);
     background-blend-mode: multiply;
     color: white;
     line-height: 1.25;
@@ -92,7 +93,7 @@ li {
     width: 100%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
     #content {
         max-width: 90vw;
         height: auto;
