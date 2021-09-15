@@ -6,8 +6,8 @@
 
 body {
     min-height: 100vh;
-    width: 100%;
-    background: rgba(0,0,0,0.8) url(./images/taco.png);
+    width: 100vw;
+    background: rgba(0,0,0,0.8) url(./images/taco.png) center/cover no-repeat;
     background-blend-mode: multiply;
     color: white;
     line-height: 1.25;
