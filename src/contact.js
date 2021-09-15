@@ -23,7 +23,9 @@ function contact() {
     hours.append(p4, p5, p6);
     const phone = document.createElement("div");
     phone.classList.add("contact__phone");
-    phone.textContent = `281-330-8004`;
+    const p7 = document.createElement("p");
+	p7.textContent = "281-330-8004";
+    phone.appendChild(p7);
     const contactForm = document.createElement("article");
     contactForm.append(createForm());
     contactForm.classList.add("contact__form");
