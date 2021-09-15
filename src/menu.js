@@ -1,8 +1,8 @@
-import avocado from "./avocado.jpg";
-import carneasada from "./carneasada.jpg";
-import chips from "./chips.jpg";
-import fish from "./fish.jpg";
-import vegetarian from "./vegetarian.jpg";
+import avocado from "./images/avocado.jpg";
+import carneasada from "./images/carneasada.jpg";
+import chips from "./images/chips.jpg";
+import fish from "./images/fish.jpg";
+import vegetarian from "./images/vegetarian.jpg";
 
 function menu() {
     const menu = document.createElement("section");
