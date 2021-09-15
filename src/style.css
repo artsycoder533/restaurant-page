@@ -27,9 +27,6 @@ a:hover{
     color: red;
 }
 
-:target {
-    color: red;
-}
 
 ::placeholder {
     color: snow;
